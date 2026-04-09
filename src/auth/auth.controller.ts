@@ -1,7 +1,7 @@
 import { Body, Controller, Delete, Post, Res } from '@nestjs/common';
 import { AuthService } from './auth.service';
 import { FastifyReply } from 'fastify';
-import { CurrentUser } from '../user/user.decorator';
+import { CurrentUser } from '../user/decorators/user.decorator';
 import { IStandartResponse } from 'src/interfaces/common.interface';
 import { AuthDto } from './dto/auth.dto';
 

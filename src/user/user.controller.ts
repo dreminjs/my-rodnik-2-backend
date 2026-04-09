@@ -1,6 +1,6 @@
 import { Controller, Get, UseGuards } from '@nestjs/common';
 import { UserService } from './user.service';
-import { CurrentUser } from './user.decorator';
+import { CurrentUser } from './decorators/user.decorator';
 import { AccessTokenGuard } from '../token/guards/access-token.guard';
 import { User } from '@prisma/client';
 

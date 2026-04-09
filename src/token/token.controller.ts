@@ -1,6 +1,6 @@
 import { Controller, Get, Res, UseGuards } from '@nestjs/common';
 import { RefreshTokenGuard } from './guards/refresh-token.guard';
-import { CurrentUser } from '../user/user.decorator';
+import { CurrentUser } from '../user/decorators/user.decorator';
 import { FastifyReply } from 'fastify';
 import { TokenService } from './token.service';
 import { IStandartResponse } from 'src/interfaces/common.interface';
