@@ -4,8 +4,8 @@ import { FastifyReply } from 'fastify';
 import { JwtService } from '@nestjs/jwt';
 import { PrismaService } from '../prisma/prisma.service';
 import { ConfigService } from '@nestjs/config';
-import { Prisma, RefreshToken } from 'generated/prisma';
 import { IStandartResponse } from 'src/interfaces/common.interface';
+import { Prisma, RefreshToken } from '@prisma/client';
 
 @Injectable()
 export class TokenService {

@@ -22,6 +22,7 @@ export class AuthService {
 
     const user = await this.userService.createOne({
       name: dto.fullName,
+      email: dto.email,
       hashedPassword: hashedPassword,
     });
 
